@@ -1,0 +1,154 @@
+/*Generel styling*/
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  color: #132555;
+}
+p,
+h4 {
+  font-family: "Work Sans", sans-serif;
+  color: #132555;
+}
+
+.page-header .entry-title,
+.page-header .page-title {
+  font-size: 33px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/*Baggrundsfarve på alle sider*/
+#content {
+  background-color: #f8f2ea;
+}
+/*Retter området til omkring alle h1*/
+.page-header {
+  background-color: #f8f2ea;
+  text-align: center;
+  border: none;
+}
+
+/*Header*/
+/*Teksten i header*/
+#masthead .onepress-menu a {
+  font-family: "Playfair Display", serif;
+  color: #132555;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*Footer*/
+/*Her fjerner vi den footer med tekst "powered by wordpress" og tilbage til top knap*/
+.site-info {
+  display: none;
+}
+/*aligner teksten under logo i center*/
+#block-12 {
+  text-align: center;
+}
+
+/*Fjerner padding om footer1(logo og tekst)*/
+.footer-widgets.section-padding {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+/*Fjerner og tilføjer padding om footer2(SoMe ikoner)*/
+.site-footer .footer-connect {
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
+/*Tablet*/
+@media (min-width: 700px) {
+  /*H1*/
+  .page-header .entry-title,
+  .page-header .page-title {
+    font-size: 38px;
+    margin-top: 2rem;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+  /*Header*/
+  /*Teksten i header*/
+  #masthead .onepress-menu a {
+    font-size: 18px;
+  }
+}
+/*desktop*/
+@media (min-width: 1000px) {
+  /*H1*/
+  .page-header .entry-title,
+  .page-header .page-title {
+    font-size: 45px;
+    margin-top: 2rem;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  /*Header*/
+  /*Teksten i header*/
+  #masthead .onepress-menu a {
+    font-size: 18px;
+  }
+}
+
+/*Styling af forside*/
+/*Her fjerner vi overskriftfeltet over splashbillede på forsiden*/
+.home .page-header {
+  display: none;
+}
+
+/*Styling af om genskabt vintage*/
+/*Styling af shop*/
+/*Styling af blog*/
+/*Styling af kundeservice-handelsbetingelser*/
+/*Styling af kundeservice-gavekort*/
+/*Styling af kontakt os*/

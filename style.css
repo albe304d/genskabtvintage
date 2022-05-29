@@ -1,10 +1,12 @@
 /* 
 Theme Name:    genskabtvintage
 Template:    onepress 
-Version:      1.0.0
+Version:      1.0.2
 Description:  OnePress Child Theme
 Author:      Kea gruppe 13
 */
+
+/*Generel styling*/
 h1,
 h2,
 h3 {
@@ -20,3 +22,20 @@ h4 {
 body {
   background-color: #f8f2ea;
 }
+
+#colophon .container {
+  display: none;
+}
+
+.home .page-header {
+  display: none;
+}
+
+/*Styling af forside*/
+
+/*Styling af om genskabt vintage*/
+/*Styling af shop*/
+/*Styling af blog*/
+/*Styling af kundeservice-handelsbetingelser*/
+/*Styling af kundeservice-gavekort*/
+/*Styling af kontakt os*/
