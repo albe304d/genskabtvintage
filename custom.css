@@ -11,11 +11,17 @@ h4 {
   color: #132555;
 }
 
+/*Overskrifterne/H1 på alle sider udover forside*/
 .page-header .entry-title,
 .page-header .page-title {
   font-size: 33px;
   font-weight: 700;
   margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+/*H1 på forside*/
+.wp-block-cover__inner-container h1 {
+  font-size: 40px !important;
 }
 
 h2 {
@@ -79,6 +85,189 @@ p {
   padding-bottom: 1rem;
 }
 
+/*Styling af menu*/
+#site-navigation a:hover {
+  color: #f4c6c6;
+}
+#site-navigation a:active {
+  color: #f4c6c6;
+}
+/*
+
+
+*/
+
+/*Styling af forside*/
+/*Her fjerner vi overskriftfeltet over splashbillede på forsiden*/
+.home .page-header {
+  display: none;
+}
+
+/*Fjerne feltet over splashbillede*/
+.wp-block-cover.alignfull.is-light {
+  margin: 0;
+  padding: 0;
+}
+#primary {
+  padding-top: 0;
+}
+
+/*De to bokse med farvet baggrund*/
+/*Fjerner padding om billedet*/
+.wp-block-columns.has-background {
+  padding: 0;
+}
+/*Fjerner margin om billedet*/
+.wp-block-image {
+  margin: 0;
+}
+
+/*Fjerner margin under tekst og billede*/
+.wp-container-14.wp-block-columns {
+  margin: 0;
+}
+.wp-container-22.wp-block-columns {
+  margin: 0;
+}
+
+/*Padding på teksten*/
+.wp-container-13.wp-block-column {
+  padding: 2rem;
+}
+.wp-container-20.wp-block-column {
+  padding: 2rem;
+}
+/*Fjerner gap mellem billede og tekst*/
+.wp-container-14.wp-block-columns {
+  gap: 0;
+}
+.wp-container-22.wp-block-columns {
+  gap: 0;
+}
+
+/*
+
+
+*/
+/*Styling af om genskabt vintage*/
+
+/*Fjerner gap mellem grøn og lyserød boks*/
+.wp-container-9.wp-block-columns {
+  column-gap: 0;
+}
+
+/*Laver padding om teksten i grøn og lyserød boks*/
+.wp-container-7 {
+  padding: 3rem;
+}
+.wp-container-8 {
+  padding: 3rem;
+}
+/*
+
+
+*/
+/*Styling af shop*/
+/*LoopView*/
+#box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 1rem;
+}
+
+.polaroid {
+  background-color: #fffdf8;
+  padding: 2rem;
+  align-content: center;
+}
+
+.polaroid img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*Layouter knapperne til filtrering*/
+#filtrering button {
+  background-color: #132555;
+  color: #e6b1c5;
+  border: none;
+  border-radius: 3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  width: 7rem;
+  height: 2rem;
+  margin: 0.2rem;
+}
+main #filtrering {
+  text-align: center;
+  margin: 2rem;
+}
+
+#filtrering button:hover {
+  background-color: #ebd2dc;
+  color: #132555;
+  border: 2px solid #132555;
+}
+
+#filtrering button:active {
+  background-color: #ebd2dc;
+  color: #132555;
+  border: 2px solid #132555;
+}
+/*
+
+
+*/
+/*Styling af blog*/
+/*
+
+
+*/
+/*Styling af kundeservice-handelsbetingelser*/
+/*
+
+
+*/
+/*Styling af kundeservice-gavekort*/
+/*
+
+
+*/
+/*Styling af kontakt os*/
+/*Fjerner margin under billede og tekst*/
+.wp-container-3 {
+  margin: 0;
+}
+/*Sætter padding om tekst*/
+.wp-container-2.wp-block-column.is-vertically-aligned-center {
+  padding: 3rem;
+}
+
+/*Får kortet til at være i midten og være responsivt*/
+.wp-container-7.wp-block-column {
+  /* align-content: center;
+  padding: 0; */
+
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.wp-container-7.wp-block-column iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/*
+
+
+*/
+
+/*Mediaquries*/
 /*Tablet*/
 @media (min-width: 700px) {
   /*H1*/
@@ -86,6 +275,11 @@ p {
   .page-header .page-title {
     font-size: 38px;
     margin-top: 2rem;
+  }
+
+  /*H1 på forside*/
+  .wp-block-cover__inner-container h1 {
+    font-size: 50px !important;
   }
 
   h2 {
@@ -118,6 +312,16 @@ p {
     margin-top: 2rem;
   }
 
+  /*H1 på forside*/
+  .wp-block-cover__inner-container h1 {
+    font-size: 60px !important;
+  }
+  /*Retter overskriften til*/
+  .wp-block-cover__inner-container {
+    margin: 5rem;
+    margin-bottom: 25rem;
+  }
+
   h2 {
     font-size: 32px;
   }
@@ -138,17 +342,17 @@ p {
   #masthead .onepress-menu a {
     font-size: 18px;
   }
-}
 
-/*Styling af forside*/
-/*Her fjerner vi overskriftfeltet over splashbillede på forsiden*/
-.home .page-header {
-  display: none;
+  #filtrering button {
+    background-color: #132555;
+    color: #e6b1c5;
+    border: none;
+    border-radius: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 8rem;
+    height: 2.5rem;
+    margin: 1rem;
+  }
 }
-
-/*Styling af om genskabt vintage*/
-/*Styling af shop*/
-/*Styling af blog*/
-/*Styling af kundeservice-handelsbetingelser*/
-/*Styling af kundeservice-gavekort*/
-/*Styling af kontakt os*/

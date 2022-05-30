@@ -33,17 +33,17 @@ do_action( 'onepress_page_before_content' );
 </nav>
 
 
-<section>
+<section id="box">
 <template>
 	<article>
 <div class="polaroid">
-<div>
-<img src="" alt="" />
+	<img src="" alt="" />
+<div class="polaroid_txt">
+	<h2 class="titel"></h2>
+	<h4 class="pris"></h4>
 </div>
-<h2 class="titel"></h2>
-<h4 class="pris"></h4>
 <div class="forsidebutton">
-<button></button>
+	<button></button>
 </div>
 </div>
 	</article>
@@ -61,35 +61,29 @@ do_action( 'onepress_page_before_content' );
 
 	<script>
 console.log("loader script")
+//Her deffineres de forskelllige let
 let toej;
 let categories;
-let filterToj;
-let filter ="alle";
+let filterToj ="alle";
 
 //nøgle
-const url = "https://albertestaermose.dk/genskabtvintage/wp-json/wp/v2/toj";
+const url = "https://albertestaermose.dk/genskabtvintage/wp-json/wp/v2/toj?per_page=100";
 const catUrl = "https://albertestaermose.dk/genskabtvintage/wp-json/wp/v2/categories";
 
 
 
 // //loader dommen før funktionen start kommer
-document.addEventListener("DOMContentLoaded", start);
+document.addEventListener("DOMContentLoaded", hentdata);
 
-//definere funktionen start, som definere at man klikker på knap
-function start() {
-	console.log("start")
-hentdata();
-}
-
-// //henter data fra json io
+// //henter rest api
 async function hentdata() {
 const data = await fetch(url);
 const catdata = await fetch(catUrl);
 toej = await data.json();
 categories = await catdata.json();
-console.log(categories);
-visToj();
+console.log(toej);
  opretknapper();
+ visToj();
 }
 
 // //definere at container er section og at temp er template
@@ -120,7 +114,7 @@ visToj();
 }
 
 function visToj() {
-console.log("visToej");
+console.log(filterToj);
 // let container = document.querySelector()
 container.innerHTML = "";
 toej.forEach((toj) => {
