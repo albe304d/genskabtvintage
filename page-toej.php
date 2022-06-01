@@ -35,27 +35,18 @@ do_action( 'onepress_page_before_content' );
 
 <section id="box">
 <template>
-	<article>
-<div class="polaroid">
+	<article class="polaroid">
 	<img src="" alt="" />
 <div class="polaroid_txt">
 	<h2 class="titel"></h2>
 	<h4 class="pris"></h4>
 </div>
-<div class="forsidebutton">
-	<button></button>
-</div>
-</div>
+<i id="heartloop" class="fa fa-heart-o"></i>
 	</article>
 </template>
 </section>
 				</main><!-- #main -->
 			</div><!-- #primary -->
-
-            <?php if ( $layout != 'no-sidebar' ) { ?>
-                <?php get_sidebar(); ?>
-            <?php } ?>
-
 		</div><!--#content-inside -->
 	</div><!-- #content -->
 
@@ -109,9 +100,10 @@ function addEventListenerToButton(){
 function filtrering(){
 filterToj = this.dataset.toj;
 console.log(filterToj)
-
+// toggleClass("".active-button")
 visToj();
 }
+
 
 function visToj() {
 console.log(filterToj);

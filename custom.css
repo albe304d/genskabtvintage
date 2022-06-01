@@ -23,10 +23,18 @@ h4 {
 .wp-block-cover__inner-container h1 {
   font-size: 40px !important;
 }
+.page-id-50 .wp-block-cover__inner-container {
+  margin: 3rem;
+  margin-bottom: 25rem;
+}
 
 h2 {
   font-size: 23px;
   font-weight: 700;
+}
+/*h2 i loopview/cards*/
+.polaroid_txt .titel {
+  padding-top: 1rem;
 }
 
 h3 {
@@ -64,6 +72,43 @@ p {
   font-weight: 500;
 }
 
+.headerIkoner {
+  background-color: #f8f2ea;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  display: grid;
+  justify-items: right;
+  /* justify-content: right; */
+  /* float: right; */
+}
+
+.headerIkoner .menuIkon1 {
+  background-color: #f8f2ea;
+  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/sog.png");
+  display: inline-block;
+  margin-left: 1rem;
+}
+.headerIkoner .menuIkon2 {
+  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/hjerte.png");
+  display: inline-block;
+  margin-left: 1rem;
+}
+.headerIkoner .menuIkon3 {
+  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/login.png");
+  display: inline-block;
+  margin-left: 1rem;
+}
+.headerIkoner .menuIkon4 {
+  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/kurv.png");
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+/*
+
+
+
+*/
 /*Footer*/
 /*Her fjerner vi den footer med tekst "powered by wordpress" og tilbage til top knap*/
 .site-info {
@@ -84,15 +129,22 @@ p {
   padding: 0;
   padding-bottom: 1rem;
 }
+/*
 
+
+
+*/
 /*Styling af menu*/
 #site-navigation a:hover {
   color: #f4c6c6;
 }
-#site-navigation a:active {
+/*Får teksten i menu til at forblive lyserød ved valgt side*/
+#site-navigation .current_page_item a {
   color: #f4c6c6;
 }
+
 /*
+
 
 
 */
@@ -114,77 +166,105 @@ p {
 
 /*De to bokse med farvet baggrund*/
 /*Fjerner padding om billedet*/
-.wp-block-columns.has-background {
+.page-id-50 .wp-block-columns.has-background {
   padding: 0;
 }
 /*Fjerner margin om billedet*/
-.wp-block-image {
+.page-id-50 .wp-block-image {
   margin: 0;
 }
 
 /*Fjerner margin under tekst og billede*/
-.wp-container-14.wp-block-columns {
+.page-id-50 .wp-container-14.wp-block-columns {
   margin: 0;
 }
-.wp-container-22.wp-block-columns {
+.page-id-50 .wp-container-22.wp-block-columns {
   margin: 0;
 }
 
 /*Padding på teksten*/
-.wp-container-13.wp-block-column {
+.page-id-50 .wp-container-13.wp-block-column {
   padding: 2rem;
 }
-.wp-container-20.wp-block-column {
+.page-id-50 .wp-container-20.wp-block-column {
   padding: 2rem;
 }
 /*Fjerner gap mellem billede og tekst*/
-.wp-container-14.wp-block-columns {
+.page-id-50 .wp-container-14.wp-block-columns {
   gap: 0;
 }
-.wp-container-22.wp-block-columns {
+.page-id-50 .wp-container-22.wp-block-columns {
   gap: 0;
 }
 
 /*
+
 
 
 */
 /*Styling af om genskabt vintage*/
 
 /*Fjerner gap mellem grøn og lyserød boks*/
-.wp-container-9.wp-block-columns {
+.page-id-10 .wp-container-9.wp-block-columns {
   column-gap: 0;
 }
 
 /*Laver padding om teksten i grøn og lyserød boks*/
-.wp-container-7 {
+.page-id-10 .wp-container-7 {
   padding: 3rem;
 }
-.wp-container-8 {
+.page-id-10 .wp-container-8 {
   padding: 3rem;
 }
 /*
 
 
+
 */
 /*Styling af shop*/
+/*TOEJ*/
+/*Layoter hjertet, som vi henter ind via link i head (defineret i html)*/
+#heartsingle .fa.fa-heart-o {
+  font-size: 28px;
+  color: #132555;
+  text-align: center;
+  justify-content: center;
+}
+#heartsingle .fa.fa-heart-o:hover {
+  font-size: 28px;
+  color: #e6b1c5;
+}
+
 /*LoopView*/
+.page-id-20 #box {
+  margin-bottom: 5rem;
+}
 #box {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  column-gap: 1rem;
+  gap: 2rem;
 }
-
+/*Styler cards/polaroids*/
 .polaroid {
   background-color: #fffdf8;
   padding: 2rem;
   align-content: center;
+  text-align: center;
+  min-height: 520px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.polaroid:hover {
+  box-shadow: 0px 0px 15px -5px #000000;
+}
+
+/*Styler produktbillederne*/
 .polaroid img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  /* height: 300px; */
   object-fit: cover;
+  aspect-ratio: 1/1;
+  max-width: 500px;
 }
 
 /*Layouter knapperne til filtrering*/
@@ -199,24 +279,140 @@ p {
   width: 7rem;
   height: 2rem;
   margin: 0.2rem;
+  box-shadow: 0px 0px 15px -8px #000000;
 }
 main #filtrering {
   text-align: center;
   margin: 2rem;
 }
-
 #filtrering button:hover {
   background-color: #ebd2dc;
   color: #132555;
   border: 2px solid #132555;
 }
+/*Her laver vi en klasse der toggles under filtrering i javascriptet*/
+/* .active-button {
+  background-color: #ebd2dc;
+  color: #132555;
+  border: 2px solid #132555;
+} */
 
-#filtrering button:active {
+/*Sætter ikon ind foran tøj*/
+.page-id-20 .entry-title::before {
+  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/toj.png");
+  display: inline-block;
+}
+/*Skoikon*/
+.page-id-22 .entry-title::before {
+  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/dameben.png");
+  display: inline-block;
+}
+/*Accessories ikon*/
+.page-id-24 .entry-title::before {
+  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/tilbehor.png");
+  display: inline-block;
+}
+/*Skønhed ikon*/
+.page-id-26 .entry-title::before {
+  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/skonhed.png");
+  display: inline-block;
+}
+/*Interiør ikon*/
+.page-id-28 .entry-title::before {
+  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/interior.png");
+  display: inline-block;
+}
+
+/*SingleView*/
+/*Retter billedstørrelse til*/
+.billeder img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+/*Layoter hjertet, som vi henter ind via link i head (defineret i html)*/
+.fa.fa-heart-o {
+  font-size: 28px;
+  color: #132555;
+  text-align: center;
+  justify-content: center;
+}
+.fa.fa-heart-o:hover {
+  font-size: 28px;
+  color: #e6b1c5;
+}
+
+/*Lyout af køb knappen på singleview*/
+.kobbutton {
+  background-color: #132555;
+  color: #e6b1c5;
+  border: none;
+  border-radius: 3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  width: 7rem;
+  height: 2rem;
+  margin: 0.2rem;
+}
+
+.kobbutton:hover {
   background-color: #ebd2dc;
   color: #132555;
   border: 2px solid #132555;
 }
+
+/*Layouter knapperne og får dem til at står ved siden af hinanden*/
+.knapConatiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*Farve og font size på single og loop view*/
+.pris,
+.pris-single {
+  color: #45667a;
+}
+.pris-single {
+  font-size: 20px;
+}
+/*Størrelsesguide accordion*/
+/*Styler lukket accordion felt*/
+.accordionGuide {
+  background-color: #fffdf8;
+  color: #172552;
+  border: solid 0.5px #172552 !important;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+/* Styler hover og active klassen, som toggles i javascript*/
+.activeGuide,
+.accordionGuide:hover {
+  background-color: #fffdf8;
+  border: solid 2px #e6b1c5 !important;
+}
+/*Styler åbent accordion felt*/
+.panelGuide {
+  padding: 0 18px;
+  background-color: #f0dfdf;
+  color: #172552;
+  display: none;
+  overflow: hidden;
+  border: solid 0.5px #172552;
+}
+
 /*
+
 
 
 */
@@ -224,9 +420,37 @@ main #filtrering {
 /*
 
 
+
 */
 /*Styling af kundeservice-handelsbetingelser*/
+/*styler de lukkede felter*/
+.accordion {
+  background-color: #3a677c;
+  color: #fcf9f5;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/*Tilføjer baggrundsfarve ved hover og tilføjer baggrundsfarve ved active klassen som tilføjes via javascript*/
+.active,
+.accordion:hover {
+  background-color: #4f7688;
+}
+
+/* Styler de åbne tekstfelter*/
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
 /*
+
 
 
 */
@@ -234,19 +458,28 @@ main #filtrering {
 /*
 
 
+
 */
 /*Styling af kontakt os*/
 /*Fjerner margin under billede og tekst*/
-.wp-container-3 {
+.page-id-18 .wp-container-3 {
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+.page-id-18 .wp-container-6 {
+  padding: 0;
+}
+.page-id-18 .wp-container-1 figure {
   margin: 0;
 }
 /*Sætter padding om tekst*/
-.wp-container-2.wp-block-column.is-vertically-aligned-center {
+.page-id-18 .wp-container-2.wp-block-column.is-vertically-aligned-center {
   padding: 3rem;
 }
 
 /*Får kortet til at være i midten og være responsivt*/
-.wp-container-7.wp-block-column {
+.page-id-18 .wp-container-7.wp-block-column {
   /* align-content: center;
   padding: 0; */
 
@@ -255,7 +488,7 @@ main #filtrering {
   position: relative;
   height: 0;
 }
-.wp-container-7.wp-block-column iframe {
+.page-id-18 .wp-container-7.wp-block-column iframe {
   left: 0;
   top: 0;
   height: 100%;
@@ -263,6 +496,7 @@ main #filtrering {
   position: absolute;
 }
 /*
+
 
 
 */
@@ -278,8 +512,15 @@ main #filtrering {
   }
 
   /*H1 på forside*/
-  .wp-block-cover__inner-container h1 {
+  .page-id-50 .wp-block-cover__inner-container h1 {
     font-size: 50px !important;
+  }
+  .page-id-50 .wp-block-cover__inner-container {
+    margin: 5rem;
+    margin-bottom: 25rem;
+  }
+  .polaroid_txt .titel {
+    font-size: 24px;
   }
 
   h2 {
@@ -302,6 +543,39 @@ main #filtrering {
   #masthead .onepress-menu a {
     font-size: 18px;
   }
+  /*Køb knap*/
+  .kobbutton {
+    background-color: #132555;
+    color: #e6b1c5;
+    border: none;
+    border-radius: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 8rem;
+    height: 2.5rem;
+    margin: 1rem;
+  }
+  .fa.fa-heart-o {
+    padding: 1rem;
+  }
+  .pris-single {
+    font-size: 25px;
+  }
+
+  /*Laver grid på singleview*/
+  #box-single article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+  }
+
+  .billeder {
+    grid-column: 1/2;
+  }
+  .txt {
+    grid-column: 2/3;
+  }
 }
 /*desktop*/
 @media (min-width: 1000px) {
@@ -313,13 +587,17 @@ main #filtrering {
   }
 
   /*H1 på forside*/
-  .wp-block-cover__inner-container h1 {
+  .page-id-50 .wp-block-cover__inner-container h1 {
     font-size: 60px !important;
   }
   /*Retter overskriften til*/
-  .wp-block-cover__inner-container {
+  .page-id-50 .wp-block-cover__inner-container {
     margin: 5rem;
     margin-bottom: 25rem;
+  }
+
+  .polaroid_txt .titel {
+    font-size: 28px;
   }
 
   h2 {
@@ -342,8 +620,14 @@ main #filtrering {
   #masthead .onepress-menu a {
     font-size: 18px;
   }
+  /*Teksten/menu centreret i header*/
+  .onepress-menu a {
+    padding: 1rem;
+  }
 
-  #filtrering button {
+  /*Filtreringsknapper og køb knap*/
+  #filtrering button,
+  .kobbutton {
     background-color: #132555;
     color: #e6b1c5;
     border: none;
@@ -354,5 +638,41 @@ main #filtrering {
     width: 8rem;
     height: 2.5rem;
     margin: 1rem;
+  }
+  .kobbutton {
+    background-color: #132555;
+    color: #e6b1c5;
+    border: none;
+    border-radius: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 9rem;
+    height: 3rem;
+    margin: 1rem;
+  }
+
+  /*Layoter hjertet i singleview, som vi henter ind via link i head (defineret i html)*/
+  .fa.fa-heart-o {
+    font-size: 48px;
+  }
+  .fa.fa-heart-o:hover {
+    font-size: 48px;
+  }
+  /*Layoter hjertet i loopview*/
+  #box .fa.fa-heart-o {
+    font-size: 35px;
+    color: #132555;
+    text-align: center;
+    justify-content: center;
+  }
+  #box .fa.fa-heart-o:hover {
+    font-size: 35px;
+    color: #e6b1c5;
+  }
+
+  /*Font size på single og loop view*/
+  .pris-single {
+    font-size: 30px;
   }
 }
