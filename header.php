@@ -30,11 +30,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 ?>
 <?php do_action( 'onepress_before_site_start' ); ?>
 <div id="page" class="hfeed site">
-	<div class="headerIkoner">
-		<div class="menuIkon1"></div>
-		<div class="menuIkon2"></div>
-		<div class="menuIkon3"></div>
-		<div class="menuIkon4"></div>
+		
 	</div>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'onepress' ); ?></a>
 	<?php

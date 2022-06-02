@@ -72,37 +72,37 @@ p {
   font-weight: 500;
 }
 
-.headerIkoner {
+/*Kurv, hjerte, søg, login ikoner oppe i menu*/
+/*layoter containeren til ikonerne*/
+.ikonContainer {
   background-color: #f8f2ea;
   padding-top: 1rem;
-  padding-left: 1rem;
+  padding-right: 2rem;
   display: grid;
   justify-items: right;
-  /* justify-content: right; */
-  /* float: right; */
 }
-
-.headerIkoner .menuIkon1 {
+/*tilføjer ikonerne*/
+/* .ikonContainer .headerIkoner .menuIkon1 {
   background-color: #f8f2ea;
   content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/sog.png");
   display: inline-block;
   margin-left: 1rem;
 }
-.headerIkoner .menuIkon2 {
+.ikonContainer .headerIkoner .menuIkon2 {
   content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/hjerte.png");
   display: inline-block;
   margin-left: 1rem;
 }
-.headerIkoner .menuIkon3 {
+.ikonContainer .headerIkoner .menuIkon3 {
   content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/login.png");
   display: inline-block;
   margin-left: 1rem;
 }
-.headerIkoner .menuIkon4 {
+.ikonContainer .headerIkoner .menuIkon4 {
   content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/kurv.png");
   display: inline-block;
   margin-left: 1rem;
-}
+} */
 
 /*
 
@@ -195,6 +195,15 @@ p {
 }
 .page-id-50 .wp-container-22.wp-block-columns {
   gap: 0;
+}
+
+#tojSlideshow {
+  display: grid;
+  justify-content: center;
+}
+#tojSlideshow article {
+  display: grid;
+  justify-content: center;
 }
 
 /*
@@ -620,7 +629,7 @@ main #filtrering {
   #masthead .onepress-menu a {
     font-size: 18px;
   }
-  /*Teksten/menu centreret i header*/
+  /* Teksten/menu centreret i header*/
   .onepress-menu a {
     padding: 1rem;
   }
