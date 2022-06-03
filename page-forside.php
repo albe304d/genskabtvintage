@@ -41,7 +41,7 @@ do_action( 'onepress_page_before_content' );
 						?>
 
 					<?php endwhile; // End of the loop. ?>
-
+<!--Herunder sætter vi slideshowet ind, hvor php sætningen er lavet fra slideshow plugin-->
 			<section id="tojSlideshow">
 				<article>
 					<h2>Se de nyeste items her:</h2>

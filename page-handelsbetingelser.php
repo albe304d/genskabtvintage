@@ -84,7 +84,7 @@ Gælder kun køb online!!
   <p>Vi bytter kun varer, der er ødelagt eller defekte. Igen må du påregne at de varer der købes her er brugte ting, der derfor ikke kan være helt som ny- det ligger i hele forretningens idé. Men jeg forsøger at beskrive varen så præcist som muligt i webshoppen.</p>
 
 </div> 
-<?php echo do_shortcode('[metaslider id="403"]'); ?>
+
 
 				</main><!-- #main -->
 			</div><!-- #primary -->
