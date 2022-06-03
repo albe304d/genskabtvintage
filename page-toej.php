@@ -57,7 +57,7 @@ console.log("loader script")
 let toej;
 //Definerer siden kategorierne
 let categories;
-//Definerer .... toj med alle kategorier
+//
 let filterToj ="alle";
 
 //nøgle
