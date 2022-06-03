@@ -12,6 +12,8 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<meta name="robots" content="noindex"/>
+<meta name="description" content="Her hos Genskabt vintage finder du lækkert vintage tøj, som er bæredygtigt tøj og miljøvenligt tøj. Her finder du bl.a. vintage kjoler. "/>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">

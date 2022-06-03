@@ -81,29 +81,6 @@ p {
   display: grid;
   justify-items: right;
 }
-/*tilføjer ikonerne*/
-/* .ikonContainer .headerIkoner .menuIkon1 {
-  background-color: #f8f2ea;
-  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/sog.png");
-  display: inline-block;
-  margin-left: 1rem;
-}
-.ikonContainer .headerIkoner .menuIkon2 {
-  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/hjerte.png");
-  display: inline-block;
-  margin-left: 1rem;
-}
-.ikonContainer .headerIkoner .menuIkon3 {
-  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/login.png");
-  display: inline-block;
-  margin-left: 1rem;
-}
-.ikonContainer .headerIkoner .menuIkon4 {
-  content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/kurv.png");
-  display: inline-block;
-  margin-left: 1rem;
-} */
-
 /*
 
 
@@ -136,13 +113,12 @@ p {
 */
 /*Styling af menu*/
 #site-navigation a:hover {
-  color: #f4c6c6;
+  color: #82ad64;
 }
 /*Får teksten i menu til at forblive lyserød ved valgt side*/
 #site-navigation .current_page_item a {
-  color: #f4c6c6;
+  color: #82ad64;
 }
-
 /*
 
 
@@ -205,7 +181,6 @@ p {
   display: grid;
   justify-content: center;
 }
-
 /*
 
 
@@ -245,6 +220,7 @@ p {
 }
 
 /*LoopView*/
+/*Styler section, hvor alle produkter/polaroids er i*/
 .page-id-20 #box {
   margin-bottom: 5rem;
 }
@@ -262,7 +238,6 @@ p {
   min-height: 520px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .polaroid:hover {
   box-shadow: 0px 0px 15px -5px #000000;
 }
@@ -299,14 +274,9 @@ main #filtrering {
   color: #132555;
   border: 2px solid #132555;
 }
-/*Her laver vi en klasse der toggles under filtrering i javascriptet*/
-/* .active-button {
-  background-color: #ebd2dc;
-  color: #132555;
-  border: 2px solid #132555;
-} */
 
-/*Sætter ikon ind foran tøj*/
+/*Sætter ikoner in foran H1 på alle sider under shop*/
+/*Tøjikon*/
 .page-id-20 .entry-title::before {
   content: url("https://albertestaermose.dk/genskabtvintage/wp-content/themes/genskabtvintage/billeder/toj.png");
   display: inline-block;
@@ -390,6 +360,7 @@ main #filtrering {
 .pris-single {
   font-size: 20px;
 }
+
 /*Størrelsesguide accordion*/
 /*Styler lukket accordion felt*/
 .accordionGuide {
@@ -419,13 +390,6 @@ main #filtrering {
   overflow: hidden;
   border: solid 0.5px #172552;
 }
-
-/*
-
-
-
-*/
-/*Styling af blog*/
 /*
 
 
@@ -458,12 +422,6 @@ main #filtrering {
   display: none;
   overflow: hidden;
 }
-/*
-
-
-
-*/
-/*Styling af kundeservice-gavekort*/
 /*
 
 
@@ -509,8 +467,8 @@ main #filtrering {
 
 
 */
-
 /*Mediaquries*/
+
 /*Tablet*/
 @media (min-width: 700px) {
   /*H1*/

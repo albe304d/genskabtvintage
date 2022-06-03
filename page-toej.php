@@ -52,9 +52,12 @@ do_action( 'onepress_page_before_content' );
 
 	<script>
 console.log("loader script")
-//Her deffineres de forskelllige let
+//Her deffineres de forskelllige variabler (der er benyttet let og ikke const, de variablen skal kunne ændres)
+//Definerer siden TØJ
 let toej;
+//Definerer siden kategorierne
 let categories;
+//Definerer .... toj med alle kategorier
 let filterToj ="alle";
 
 //nøgle
@@ -63,7 +66,7 @@ const catUrl = "https://albertestaermose.dk/genskabtvintage/wp-json/wp/v2/catego
 
 
 
-// //loader dommen før funktionen start kommer
+// //loader dommen før og henviser så herefter til hentdata funktionen
 document.addEventListener("DOMContentLoaded", hentdata);
 
 // //henter rest api
